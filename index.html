@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sanity Scripts Loading</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/as.css">
+		<script src="js/javascript.js"></script>
+	</head>
+
+	<body>
+		<div id="loading">
+				<img class="image-loading" src="JOUW-LOGO">
+			<div class="progress-line"></div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+			var volume = 99;
+			  $("audio").each(function(){ this.volume = volume/99; });
+			});
+		  </script>
+		  <audio controls autoplay loop hidden>
+			<source src="JOUW-MUZIEK" type="audio/ogg">  # VERANDER NAAM VAN MUZIEK BESTAND NAAR audio.ogg OM HET TE LATEN WERKEN
+		  </audio>
+		</div>
+	</body>
+</html>

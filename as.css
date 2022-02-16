@@ -1,0 +1,63 @@
+body {
+	background: linear-gradient(to top right, #000000, #ffffff) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	transition: .5s ease-out;
+	animation-iteration-count: infinite;
+}
+
+#loading {
+	position: relative;
+	z-index: 1;
+}
+
+.image {
+	width: 100%;
+}
+
+.image-loading {
+	display: block;
+	position: relative;
+	top: 250px;
+	margin: 0 auto;
+	bottom: -35vh;
+	width: 420px;
+	height: 420px;
+}
+
+.progress-line, .progress-line:before {
+	height: 4px;
+	width: 100%;
+	margin: 0;
+}
+
+.progress-line {
+	background-color: #ffffff;
+	display: -webkit-flex;
+	display: flex;
+	position: relative;
+	bottom: -40vh;
+	max-width: 25%;
+	left: 67vh;
+}
+
+.progress-line:before {
+	background-color: #ffffff;
+	content: '';
+	-webkit-animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+	animation: running-progress 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@-webkit-keyframes running-progress {
+	0% { margin-left: 0px; margin-right: 100%; }
+	50% { margin-left: 25%; margin-right: 0%; }
+	100% { margin-left: 100%; margin-right: 0; }
+}
+
+@keyframes running-progress {
+	0% { margin-left: 0px; margin-right: 100%; }
+	50% { margin-left: 25%; margin-right: 0%; }
+	100% { margin-left: 100%; margin-right: 0; }
+}
