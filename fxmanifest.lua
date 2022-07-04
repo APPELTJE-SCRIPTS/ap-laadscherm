@@ -6,6 +6,6 @@ files {
 
 loadscreen 'index.html'
 
-description 'sn-laadscherm - laadscherm voor fivem'
+description 'ap-laadscherm - laadscherm voor fivem'
 
-author 'FL45H#5053'
+author 'Appeltje#5053'
